@@ -5,7 +5,7 @@ import { Context as LocationProvider } from "../context/LocationContext";
 
 const Map = () => {
   const { state } = useContext(LocationProvider);
-  const { currentLocation } = state;
+  const { currentLocation, locations } = state;
 
   if (!currentLocation) {
     return <ActivityIndicator size="large" style={{marginTop:200}} />
@@ -31,7 +31,7 @@ const Map = () => {
         strokeColor='black'
         fillColor='black'
       />
-      {/* <Polyline coordinates={points}/> */}
+      <Polyline coordinates={locations.map(loc => loc.coords)}/>
     </MapView>
   );
 };
