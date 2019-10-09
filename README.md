@@ -1,3 +1,3 @@
-go into tracks run npm start to start the client
-
-go into track-server and npm run dev. This runs nodemon and starts the application in dev mode. 
+Navigate into tracks 
+1) Run `npm start` to start the client
+2) Then navigate into track-server and run `npm run dev`. This runs nodemon and starts the application inside dev mode. 
