@@ -5,7 +5,7 @@ const pointSchema = new mongoose.Schema({
   typestamp: Number,
   coords: {
     latitude: Number,
-    logitude: Number,
+    longitude: Number,
     altitude: Number,
     accuracy: Number,
     heading: Number,
